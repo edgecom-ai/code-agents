@@ -18,6 +18,7 @@ into a new repo, answer the placeholders, delete what does not apply.
 | `skills/`                          | Seven task skills, drop-in as `.claude/skills/<name>/SKILL.md`.          |
 | `skills/_template/SKILL.md`        | How to write a new skill for a hazard specific to your repo.             |
 | `reference/adoption-checklist.md`  | Port this into a new codebase, step by step, with the placeholder table. |
+| `reference/stack.md`               | The frontend stack these choices assume, as settled in the panel repo.   |
 | `reference/design-notes.md`        | Why the setup is shaped this way — the principles behind it.             |
 | `reference/local-hazard-skills.md` | Worked examples of repo-specific rules, so you can spot yours.           |
 | `enforcement/git-hooks.md`         | The git-hook layer: staged-file fixes, message shape, the gate on push.  |
