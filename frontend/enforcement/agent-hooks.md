@@ -201,7 +201,7 @@ The differences they absorb:
 | `SKILL_DOCUMENT`, `PATCH_FILE_DIRECTIVE`, `PATCH_MOVE_DIRECTIVE` | Protocol, not policy — leave them                                                                                                                                    |
 
 One value lives outside `constants.mjs`: the journal folder name in
-`session-history.mjs` (`edgecom-agent-hooks`) and the matching path in the
+`session-history.mjs` (`agent-hooks-journal`) and the matching path in the
 test. Rename both to your repo.
 
 The tests in `guards.test.mjs` name real paths from the original repo as

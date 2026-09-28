@@ -6,16 +6,16 @@ local-hazard skills accrue afterwards, one per bug that got shipped twice.
 ## 1. Copy the files
 
 ```bash
-cp  agent-kit/AGENTS.md                              <repo>/AGENTS.md
+cp  frontend/AGENTS.md                              <repo>/AGENTS.md
 ln -s AGENTS.md                                      <repo>/CLAUDE.md
 mkdir -p <repo>/.claude/skills
-cp -R agent-kit/skills/*                             <repo>/.claude/skills/
+cp -R frontend/skills/*                             <repo>/.claude/skills/
 rm -rf <repo>/.claude/skills/_template               # keep it only if you'll write more skills
 ln -s .claude                                        <repo>/.codex
 mkdir -p <repo>/scripts
-cp -R agent-kit/enforcement/agent-hooks              <repo>/scripts/agent-hooks
-cp    agent-kit/enforcement/git-hooks/*.mjs          <repo>/scripts/
-cp    agent-kit/enforcement/file-length/*.mjs        <repo>/scripts/
+cp -R frontend/enforcement/agent-hooks              <repo>/scripts/agent-hooks
+cp    frontend/enforcement/git-hooks/*.mjs          <repo>/scripts/
+cp    frontend/enforcement/file-length/*.mjs        <repo>/scripts/
 echo '{ "exceptions": [] }'                        > <repo>/.file-length-exceptions.json
 ```
 

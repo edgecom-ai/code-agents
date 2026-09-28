@@ -21,7 +21,7 @@ import { CODEX, normalizeToolUse } from './hosts.mjs';
 
 // Codex transcripts are unstable, so persist only gate facts; raw commands,
 // patches, and tool inputs stay in Codex's own transcript.
-const JOURNAL_DIRECTORY = path.join(os.tmpdir(), 'edgecom-agent-hooks');
+const JOURNAL_DIRECTORY = path.join(os.tmpdir(), 'agent-hooks-journal');
 
 // An entry freezes its verdict and indexes into GATE_STEPS by position, so a
 // policy change has to invalidate the journal. Deriving the version from the
